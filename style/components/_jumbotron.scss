@@ -1,0 +1,9 @@
+.jumbotron {
+  background-image: url(../../images/jumbotron-bg.jpg);
+  background-size: cover;
+  height: 540px;
+
+  @include media-breakpoint-down(sm) {
+    height: 240px;
+  }
+}
