@@ -10884,6 +10884,18 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  .page-content .info .right {
+    float: right;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-content .info .right a {
+    float: right;
+  }
+}
+
 .page-content .info img {
   width: 60px;
   height: 60px;

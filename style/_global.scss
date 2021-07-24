@@ -50,6 +50,17 @@ body {
       margin-top: 0;
     }
 
+    .right {
+      @include media-breakpoint-down(sm) {
+        float: right;
+      }
+      a {
+        @include media-breakpoint-down(sm) {
+          float: right;
+        }
+      }
+    }
+
     img {
       width: 60px;
       height: 60px;
