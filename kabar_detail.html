@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png" />
+
+    <title>Sahabat Cinta Umat</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-light
+        navbar-store
+        fixed-top
+        navbar-fixed-top
+      "
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="images/Logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Beranda </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Profile</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/profile-yayasan.html"
+                  >Profile Yayasan</a
+                >
+                <a class="dropdown-item" href="/visi-misi.html"
+                  >Visi dan Misi</a
+                >
+                <a class="dropdown-item" href="/maksud-tujuan.html"
+                  >Maksud dan Tujuan</a
+                >
+                <a class="dropdown-item" href="/program.html">Program</a>
+                <a class="dropdown-item" href="/legalitas.html">Legalitas</a>
+                <a class="dropdown-item" href="/galeri.html">Galeri</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Donasi</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/semua-donasi.html"
+                  >Semua Donasi</a
+                >
+                <a class="dropdown-item" href="/keranjang-donasi.html"
+                  >Keranjang Donasi</a
+                >
+                <a class="dropdown-item" href="/biaya-donasi.html"
+                  >Biaya Donasi</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/akun-donatur.html"
+                  >Akun Donatur</a
+                >
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/kabar.html">Kabar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-content page-details">
+      <section
+        class="store-breadcrumbs"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb" class="mt-5">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/kabar.html">Kabar</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Kabar Details
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="store-gallery" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="zoom-in">
+              <transition name="slide-fade" mode="out-in">
+                <img
+                  :key="photos[activePhoto].id"
+                  :src="photos[activePhoto].url"
+                  class="w-100 main-image"
+                  alt=""
+                />
+              </transition>
+            </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <div
+                  class="col-3 col-lg-12 mt-2 mt-lg-0"
+                  v-for="(photo, index) in photos"
+                  :key="photo.id"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <a href="#" @click="changeActive(index)">
+                    <img
+                      :src="photo.url"
+                      class="w-100 thumbnail-image"
+                      :class="{ active: index == activePhoto }"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="store-details-container" data-aos="fade-up">
+        <section class="store-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1>Sahabat Cinta Umat Salurkan Bantuan ke Berbagai Daerah</h1>
+                <div class="owner">By Fadhil Rahman</div>
+                <div class="price">Talk.Berita</div>
+              </div>
+              <div class="col-lg-2" data-aos="zoom-in">
+                <a
+                  class="
+                    btn btn-primary
+                    nav-link
+                    px-4
+                    text-white
+                    btn-block
+                    mb-3
+                  "
+                  href="/cart.html"
+                  >Like</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="store-description">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <p>
+                  Riau – Pada bulan Juli 2021, Yayasan Sahabat Cinta Umat telah
+                  menyalurkan berbagai bantuan ke beberapa daerah. Diantaranya
+                  sebagai berikut :
+                </p>
+                <p>
+                  Serah terimah bantuan untuk korban longsor di Kuala Enok,
+                  Tanjung Baru, Kab. Tembilahan Serah terima bantuan Baju Koko
+                  dan uang tunai kepada imam Masjid duafa (foto dikantor SCU).
+                  Turun langsung merakit tanki air untuk menyalurkan air bersih
+                  bagi korban banjir di Rumbai, Kota Pekanbaru. Menyalurkan
+                  bantuan sembako untuk santri duafa di Pondok Pesantren
+                  pinggiran kota. Yayasan Sahabat Conta umat selalu berusaha
+                  amanah dalam menyampaikan bantuan yang diberikan oleh umat.
+                  Semoga akan semakin banyak umat yang membutuhkan yang kita
+                  bantu. Mohon dukungannya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="store-review">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8 mt-3 mb-3">
+                <h5>Comment (3)</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img
+                      src="/images/icon-testimonial-1.png"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Hazza Risky</h5>
+                      I thought it was not good for living room. I really happy
+                      to decided buy this product last week now feels like
+                      homey.
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img
+                      src="/images/icon-testimonial-2.png"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Anna Sukkirata</h5>
+                      Color is great with the minimalist concept. Even I thought
+                      it was made by Cactus industry. I do really satisfied with
+                      this.
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img
+                      src="/images/icon-testimonial-3.png"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Dakimu Wangi</h5>
+                      When I saw at first, it was really awesome to have with.
+                      Just let me know if there is another upcoming product like
+                      this.
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="form-group mt-2 mb-1">
+                      <label for="comment">Comment:</label>
+                      <textarea
+                        class="form-control col-lx"
+                        rows="5"
+                        cols="80"
+                        id="comment"
+                      ></textarea>
+                      <!-- <input
+                        type="text"
+                        class="form-control mt-2 mb-1 col-lg"
+                        placeholder="comment"
+                      /> -->
+                      <button
+                        class="
+                          btn btn-primary
+                          nav-link
+                          px-4
+                          text-white
+                          btn-block
+                          mb-3
+                        "
+                      >
+                        Kirim
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="pt-4 pb-2">
+              2021 Copyright sahabatcintaumat. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 3,
+          photos: [
+            {
+              id: 1,
+              url: "/images/gambar.png",
+            },
+            {
+              id: 2,
+              url: "/images/gmbr-visi-misi.jpg",
+            },
+            {
+              id: 3,
+              url: "/images/jumbotron-bg.jpg",
+            },
+            {
+              id: 4,
+              url: "/images/maksud-tujuan.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id) {
+            this.activePhoto = id;
+          },
+        },
+      });
+    </script>
+    <script src="/script/navbar-scroll.js"></script>
+  </body>
+</html>
