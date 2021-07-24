@@ -10827,6 +10827,14 @@ body {
   margin-top: 90px;
 }
 
+.page-content .profil img {
+  width: 1000px;
+}
+
+.page-content .profil p {
+  font-size: 24px;
+}
+
 .page-content .zakat .card {
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);

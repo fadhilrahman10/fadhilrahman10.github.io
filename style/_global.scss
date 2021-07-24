@@ -5,6 +5,15 @@ body {
 .page-content {
   margin-top: 90px;
 
+  .profil {
+    img {
+      width: 1000px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+
   .zakat {
     .card {
       box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
