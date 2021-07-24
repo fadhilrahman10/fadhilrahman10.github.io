@@ -87,6 +87,15 @@ footer {
   p {
     color: #979797;
   }
+
+  .map {
+    iframe {
+      @include media-breakpoint-down(sm) {
+        width: 240px;
+        height: 240px;
+      }
+    }
+  }
 }
 
 .form-control {

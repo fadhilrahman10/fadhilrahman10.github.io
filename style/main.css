@@ -10932,6 +10932,13 @@ footer p {
   color: #979797;
 }
 
+@media (max-width: 767.98px) {
+  footer .map iframe {
+    width: 240px;
+    height: 240px;
+  }
+}
+
 .form-control {
   background-color: #f3f3f3;
 }
