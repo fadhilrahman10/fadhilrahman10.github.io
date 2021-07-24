@@ -49,7 +49,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">Beranda </a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item active dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 data-toggle="dropdown"
@@ -75,7 +75,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/komtak.html">Kontak</a>
+              <a class="nav-link" href="/kontak.html">Kontak</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -103,7 +103,7 @@
                 >
               </div>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="/kabar.html">Kabar</a>
             </li>
           </ul>
@@ -111,40 +111,193 @@
       </div>
     </nav>
 
-    <div class="page-content">
-      <div class="container">
-        <div class="row profil">
-          <div class="col-12">
-            <h2 class="mt-4">Profile Yayasan</h2>
-            <div class="row mt-5 justify-content-center">
-              <div class="col-12 text-center">
+    <div class="page-content page-details">
+      <section
+        class="store-breadcrumbs"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/">News</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    News Details
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="store-gallery" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="zoom-in">
+              <transition name="slide-fade" mode="out-in">
                 <img
-                  src="/images/profile-lembaga.png"
-                  class="img-fluid"
+                  :key="photos[activePhoto].id"
+                  :src="photos[activePhoto].url"
+                  class="w-100 main-image"
                   alt=""
                 />
-              </div>
-              <div class="col-12 mt-5">
-                <p>
-                  Yayasan Sahabat Cinta Umat terbentuk atas dasar semangat juang
-                  yang tinggi dalam membantu meringankan beban umat yang sedang
-                  dilanda musibah dan kemalangan. Sahabat Cinta Umat didirikan
-                  pada tanggal 1 Juni 2020 di Pekanbaru, berkedudukan dan
-                  berkantor di Pekanbaru.
-                </p>
-                <p>
-                  Melihat kondisi sosial yang demikian serta dalam rangka
-                  mewujudkan kepedulian terhadap permasalahan kesejahteraan
-                  sosial, kesehatan, pendidikan, dan pemberdayaan sosial, maka
-                  kami menghimpun diri dan membentuk Lembaga Sosial Kemanusiaan
-                  yang dinamai Sahabat Cinta Umat guna turun serta menjadi wadah
-                  dalam membantu masyarakat prasejahtera, dilanda musibah berupa
-                  sakit, bencana alam dan lainnya.
-                </p>
+              </transition>
+            </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <div
+                  class="col-3 col-lg-12 mt-2 mt-lg-0"
+                  v-for="(photo, index) in photos"
+                  :key="photo.id"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <a href="#" @click="changeActive(index)">
+                    <img
+                      :src="photo.url"
+                      class="w-100 thumbnail-image"
+                      :class="{ active: index == activePhoto }"
+                      alt=""
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <div class="store-details-container" data-aos="fade-up">
+        <section class="store-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1>Sofa Ternyaman</h1>
+                <div class="owner">By Fadhil Rahman</div>
+                <div class="price">Style</div>
+              </div>
+              <div class="col-lg-2" data-aos="zoom-in">
+                <a
+                  class="
+                    btn btn-warning
+                    nav-link
+                    px-4
+                    text-white
+                    btn-block
+                    mb-3
+                  "
+                  href="/cart.html"
+                  >Edit</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="store-description">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <p>
+                  The Nike Air Max 720 SE goes bigger than ever before with
+                  Nike's tallest Air unit yet for unimaginable, all-day comfort.
+                  There's super breathable fabrics on the upper, while colours
+                  add a modern edge.
+                </p>
+                <p>
+                  Bring the past into the future with the Nike Air Max 2090, a
+                  bold look inspired by the DNA of the iconic Air Max 90.
+                  Brand-new Nike Air cushioning underfoot adds unparalleled
+                  comfort while transparent mesh and vibrantly coloured details
+                  on the upper are blended with timeless OG features for an
+                  edgy, modernised look.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="store-review">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8 mt-3 mb-3">
+                <h5>Comment (3)</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img
+                      src="/images/icon-testimonial-1.png"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Hazza Risky</h5>
+                      I thought it was not good for living room. I really happy
+                      to decided buy this product last week now feels like
+                      homey.
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img
+                      src="/images/icon-testimonial-2.png"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Anna Sukkirata</h5>
+                      Color is great with the minimalist concept. Even I thought
+                      it was made by Cactus industry. I do really satisfied with
+                      this.
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img
+                      src="/images/icon-testimonial-3.png"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1">Dakimu Wangi</h5>
+                      When I saw at first, it was really awesome to have with.
+                      Just let me know if there is another upcoming product like
+                      this.
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="form-group mt-2 mb-1">
+                      <label for="comment">Comment:</label>
+                      <textarea
+                        class="form-control col-lx"
+                        rows="5"
+                        cols="80"
+                        id="comment"
+                      ></textarea>
+                      <!-- <input
+                        type="text"
+                        class="form-control mt-2 mb-1 col-lg"
+                        placeholder="comment"
+                      /> -->
+                      <button
+                        class="
+                          btn btn-primary
+                          nav-link
+                          px-4
+                          text-white
+                          btn-block
+                          mb-3
+                        "
+                      >
+                        Kirim
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 

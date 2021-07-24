@@ -11392,6 +11392,8 @@ footer p {
   margin-bottom: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 .component-categories:hover {
