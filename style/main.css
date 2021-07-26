@@ -11010,6 +11010,83 @@ footer p {
   margin-top: 150px;
 }
 
+.page-details .payment-method .payment-radio {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.page-details .payment-method .payment-radio input[type="radio"] {
+  display: none;
+}
+
+.page-details .card {
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+  border-color: #fff;
+}
+
+.page-details .card .card-body {
+  padding: 32px;
+}
+
+.page-details .card .card-body .form-control {
+  background: transparent;
+  padding: 16px 20px;
+  resize: none;
+}
+
+.page-details .card .card-body .title-donasi {
+  margin-bottom: 30px;
+}
+
+.page-details .card .card-body .title-donasi img {
+  margin-right: 20px;
+}
+
+.page-details .card .card-body .title-donasi h2 {
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+
+.page-details .card .card-body .title-donasi p {
+  font-size: 16px;
+  color: #8b8b8b;
+}
+
+.page-details .card .card-body .form-group h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.page-details .card .card-body .form-group span i {
+  font-size: 14px;
+  color: #8b8b8b;
+  opacity: 0.5;
+}
+
+.page-details .card .card-body .akun {
+  padding-top: 30px;
+  margin: 30px 0;
+  border-top: 1px solid #c5c5c5;
+}
+
+.page-details .card .card-body .akun h4 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.page-details .card .card-body .form .cutom-checkbox {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-details .card .card-body .form label {
+  font-size: 14px;
+  color: #8b8b8b;
+}
+
 @media (min-width: 1230px) {
   .page-details .container {
     max-width: 1220px;
