@@ -11010,6 +11010,91 @@ footer p {
   margin-top: 150px;
 }
 
+@media (min-width: 1230px) {
+  .page-details .container {
+    max-width: 1220px;
+  }
+}
+
+.page-details .tab-content {
+  background: #fff;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.page-details .tab-content p {
+  font-size: 16px;
+}
+
+@media (max-width: 767.98px) {
+  .page-details .tab-content p {
+    font-size: 14px;
+  }
+}
+
+.page-details .tab-content .total {
+  font-size: 28px;
+}
+
+.page-details .tab-content .btn-bayar {
+  padding: 12px 30px;
+  font-size: 14px;
+}
+
+.page-details .tab-content label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+  .page-details .tab-content label {
+    font-size: 12px;
+  }
+}
+
+.page-details .tab-content span {
+  font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+  .page-details .tab-content span {
+    font-size: 12px;
+  }
+}
+
+.page-details .tab-content strong {
+  font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+  .page-details .tab-content strong {
+    font-size: 12px;
+  }
+}
+
+.page-details .tab-content .labelZakat {
+  height: 35px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-details .tab-content .inputZakat {
+  padding: 16px 20px;
+}
+
+@media (min-width: 768px) {
+  .page-details .nav-pills a {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-size: 24px;
+  }
+}
+
 .page-details h5 {
   color: #0c0d36;
   font-size: 18px;

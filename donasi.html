@@ -119,41 +119,63 @@
         <div class="container">
           <div class="dashboard-content">
             <div class="row">
-              <div class="col-2">
-                <div class="row mx-auto">
-                  <ul
-                    class="nav nav-pills flex-column"
-                    id="myTab"
-                    role="tablist"
-                  >
-                    <li class="nav-item" role="presentation">
-                      <a
-                        class="nav-link active"
-                        id="sell-tab"
-                        data-toggle="tab"
-                        href="#sell"
-                        role="tab"
-                        aria-controls="sell"
-                        aria-selected="true"
-                        >Zakat</a
-                      >
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a
-                        class="nav-link"
-                        id="buy-tab"
-                        data-toggle="tab"
-                        href="#buy"
-                        role="tab"
-                        aria-controls="buy"
-                        aria-selected="false"
-                        >Infak</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+              <div class="col-3 d-none d-md-block">
+                <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="sell-tab"
+                      data-toggle="tab"
+                      href="#sell"
+                      role="tab"
+                      aria-controls="sell"
+                      aria-selected="true"
+                      >Zakat</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="buy-tab"
+                      data-toggle="tab"
+                      href="#buy"
+                      role="tab"
+                      aria-controls="buy"
+                      aria-selected="false"
+                      >Infak</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <div class="col-10">
+              <div class="col-12 d-block d-md-none">
+                <ul class="nav nav-pills mb-3" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="sell-tab"
+                      data-toggle="tab"
+                      href="#sell"
+                      role="tab"
+                      aria-controls="sell"
+                      aria-selected="true"
+                      >Zakat</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="buy-tab"
+                      data-toggle="tab"
+                      href="#buy"
+                      role="tab"
+                      aria-controls="buy"
+                      aria-selected="false"
+                      >Infak</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-9">
                 <div class="tab-content" id="myTabContent">
                   <div
                     class="tab-pane fade show active"
@@ -161,84 +183,217 @@
                     role="tabpanel"
                     aria-labelledby="sell-tab"
                   >
-                    <div class="card">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-12">
-                            <img
-                              src="/images/icon_zakat.png"
-                              width="50"
-                              class="img-fluid"
-                              alt=""
-                            />
-                            Ayo Hitung Zakat Kamu
+                    <div class="container align-items-center">
+                      <div class="row">
+                        <div
+                          class="col-12 d-none d-sm-none d-md-block d-lg-block"
+                        >
+                          <img
+                            src="/images/icon_zakat.png"
+                            width="50"
+                            class="img-fluid"
+                            alt=""
+                          />
+                          <span class="text-secondary">
+                            <strong> Ayo Hitung Zakat Kamu </strong>
+                          </span>
+                        </div>
+                        <div
+                          class="col-12 d-block d-sm-block d-md-none d-lg-none"
+                        >
+                          <img
+                            src="/images/icon_zakat.png"
+                            width="50"
+                            class="img-fluid"
+                            alt=""
+                          />
+                          <span class="text-secondary text-center">
+                            <strong> Ayo Hitung Zakat Kamu </strong>
+                          </span>
+                        </div>
+                        <div
+                          class="
+                            col-4
+                            offset-8
+                            text-right
+                            d-none d-sm-none d-md-block d-lg-block
+                            justify-content-center
+                          "
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="
+                                btn
+                                border
+                                dropdown-toggle
+                                bg-none
+                                btn-block
+                                text-secondary
+                                font-weight-bold
+                              "
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Mal
+                            </button>
+                            <div
+                              class="dropdown-menu w-100"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <a class="dropdown-item" href="#">Maal</a>
+                              <a class="dropdown-item" href="#">Profesi</a>
+                              <a class="dropdown-item" href="#"
+                                >Surat Berharga</a
+                              >
+                              <a class="dropdown-item" href="#">Pertambangan</a>
+                              <a class="dropdown-item" href="#">Emas & Perak</a>
+                              <a class="dropdown-item" href="#">Perniagaan</a>
+                              <a class="dropdown-item" href="#">Pertanian</a>
+                            </div>
                           </div>
-                          <div class="col-12">
-                            <div class="dropdown">
-                              <button
-                                class="btn w-25 float-right dropdown-toggle"
-                                type="button"
-                                id="dropdownMenuButton"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
+                        </div>
+                        <div
+                          class="
+                            col-12
+                            text-center
+                            d-block d-sm-block d-md-none d-lg-none
+                            justify-content-center
+                          "
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="
+                                btn
+                                border
+                                dropdown-toggle
+                                bg-none
+                                mt-2
+                                btn-block
+                                text-center text-secondary
+                                font-weight-bold
+                              "
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              Mal
+                            </button>
+                            <div
+                              class="dropdown-menu w-100"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <a class="dropdown-item" href="#">Maal</a>
+                              <a class="dropdown-item" href="#">Profesi</a>
+                              <a class="dropdown-item" href="#"
+                                >Surat Berharga</a
                               >
-                                Mal
-                              </button>
-                              <div
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownMenuButton"
-                              >
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#"
-                                  >Another action</a
-                                >
-                                <a class="dropdown-item" href="#"
-                                  >Something else here</a
-                                >
+                              <a class="dropdown-item" href="#">Pertambangan</a>
+                              <a class="dropdown-item" href="#">Emas & Perak</a>
+                              <a class="dropdown-item" href="#">Perniagaan</a>
+                              <a class="dropdown-item" href="#">Pertanian</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div
+                          class="col-12 d-none d-sm-none d-md-block d-lg-block"
+                        >
+                          <p class="mt-4 mb-5">
+                            Coba masukkan jumlah hartamu dan kalkulator kami
+                            akan menghitung jumlah zakatnya.
+                          </p>
+                        </div>
+                        <div
+                          class="col-12 d-block d-sm-block d-md-none d-lg-none"
+                        >
+                          <p class="mt-4 mb-4 text-center">
+                            Coba masukkan jumlah hartamu dan kalkulator kami
+                            akan menghitung jumlah zakatnya.
+                          </p>
+                        </div>
+                      </div>
+                      <form action="" class="form-horizontal">
+                        <div class="row">
+                          <div class="form-group mb-0 col-12">
+                            <div class="d-none d-sm-none d-md-block d-lg block">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <label for="">Kekayaan (1 tahun)</label>
+                                </div>
+                                <div class="col-md-8 text-right">
+                                  <div class="custom-control custom-switch">
+                                    <span class="mr-5 text-muted labelZakat"
+                                      >Isi sendiri Zakat Maal</span
+                                    >
+                                    <input
+                                      type="checkbox"
+                                      class="custom-control-input"
+                                      id="customSwitch1"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="customSwitch1"
+                                    ></label>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-12">
-                            <p>
-                              Coba masukkan jumlah hartamu dan kalkulator kami
-                              akan menghitung jumlah zakatnya.
-                            </p>
-                          </div>
-                          <div class="col-12">
-                            <span>Kekayaan</span>
-                            <div
-                              class="custom-control custom-switch float-right"
-                            >
-                              <span class="mr-5 text-muted"
-                                >Isi sendiri Zakat Maal</span
-                              >
-                              <input
-                                type="checkbox"
-                                class="custom-control-input"
-                                id="customSwitch1"
-                              />
-                              <label
-                                class="custom-control-label"
-                                for="customSwitch1"
-                              ></label>
+                            <div class="d-block d-sm-block d-md-none d-lg none">
+                              <div class="row">
+                                <div class="col-6">
+                                  <label for="">Kekayaan (1 tahun)</label>
+                                </div>
+                                <div class="col-6 text-right">
+                                  <div class="custom-control custom-switch">
+                                    <input
+                                      type="checkbox"
+                                      class="custom-control-input"
+                                      id="customSwitch1"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="customSwitch1"
+                                    ></label>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="input-group flex-nowrap">
+                            <div class="input-group">
                               <div class="input-group-prepend">
                                 <span
-                                  class="input-group-text"
+                                  class="
+                                    input-group-text
+                                    bg-transparent
+                                    font-weight-bold
+                                  "
                                   id="addon-wrapping"
                                   >Rp</span
                                 >
                               </div>
                               <input
                                 type="text"
-                                class="form-control"
+                                class="
+                                  form-control form-control-lg
+                                  bg-transparent
+                                  inputZakat
+                                "
                                 placeholder="0"
                                 aria-label="Username"
                                 aria-describedby="addon-wrapping"
                               />
                             </div>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="d-none d-sm-none d-md-block d-lg-block">
+                        <div class="row">
+                          <div class="col-12 mt-1 mb-1">
                             <span class="text-muted"
                               >Pastikan harta Anda memenuhi syarat untuk
                               berzakat / sudah nishab (senilai 85 gram
@@ -246,13 +401,37 @@
                             >
                           </div>
                         </div>
-                        <div class="row mt-5">
-                          <div class="col-4">
+                        <div class="row">
+                          <div class="col-md-4 form-group">
                             <strong>Zakat Maal Kamu</strong>
-                            <span>Rp 1,455</span>
+                            <br />
+                            <span class="total text-success">Rp 5.000</span>
                           </div>
-                          <div class="col-8 text-right">
-                            <button class="btn btn-primary">
+                          <div class="col-md-8 form-group text-right">
+                            <button class="btn btn-primary btn-bayar">
+                              Bayar Zakat Maal
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-block d-sm-block d-md-none d-lg-none">
+                        <div class="row">
+                          <div class="col-12 mt-1 mb-1">
+                            <span class="text-muted"
+                              >Pastikan harta Anda memenuhi syarat untuk
+                              berzakat / sudah nishab (senilai 85 gram
+                              emas)</span
+                            >
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-4 form-group">
+                            <strong>Zakat Maal Kamu</strong>
+                            <br />
+                            <span class="total text-success">Rp 5.000</span>
+                          </div>
+                          <div class="col-md-8 form-group text-right">
+                            <button class="btn btn-block btn-primary btn-bayar">
                               Bayar Zakat Maal
                             </button>
                           </div>
@@ -260,6 +439,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div
                     class="tab-pane fade"
                     id="buy"
@@ -275,19 +455,19 @@
                           <div class="card-body">
                             <div class="row">
                               <div class="col-md-1">
-                                <img
+                                <!-- <img
                                   src="/images/dashboard-icon-product-1.png"
                                   alt=""
-                                />
+                                /> -->
                               </div>
                               <div class="col-md-4">Shirup Marzzan</div>
                               <div class="col-md-3">Angga Risky</div>
                               <div class="col-md-3">12 Januari, 2020</div>
                               <div class="col-md-1 d-none d-md-block">
-                                <img
+                                <!-- <img
                                   src="/images/dashboard-arrow-right.svg"
                                   alt=""
-                                />
+                                /> -->
                               </div>
                             </div>
                           </div>
@@ -321,41 +501,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script src="/vendor/vue/vue.js"></script>
-    <script>
-      var gallery = new Vue({
-        el: "#gallery",
-        mounted() {
-          AOS.init();
-        },
-        data: {
-          activePhoto: 3,
-          photos: [
-            {
-              id: 1,
-              url: "/images/gambar.png",
-            },
-            {
-              id: 2,
-              url: "/images/gmbr-visi-misi.jpg",
-            },
-            {
-              id: 3,
-              url: "/images/jumbotron-bg.jpg",
-            },
-            {
-              id: 4,
-              url: "/images/maksud-tujuan.jpg",
-            },
-          ],
-        },
-        methods: {
-          changeActive(id) {
-            this.activePhoto = id;
-          },
-        },
-      });
     </script>
     <script src="/script/navbar-scroll.js"></script>
   </body>

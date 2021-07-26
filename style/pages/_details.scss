@@ -1,5 +1,85 @@
 .page-details {
   margin-top: 150px;
+
+  @media (min-width: 1230px) {
+    .container {
+      max-width: 1220px;
+    }
+  }
+
+  .tab-content {
+    background: #fff;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+
+    p {
+      font-size: 16px;
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+      }
+    }
+
+    .total {
+      font-size: 28px;
+    }
+
+    .btn-bayar {
+      padding: 12px 30px;
+      font-size: 14px;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: 14px;
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+      }
+    }
+
+    span {
+      font-size: 14px;
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+      }
+    }
+
+    strong {
+      font-size: 14px;
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+      }
+    }
+
+    .labelZakat {
+      height: 35px;
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .inputZakat {
+      // font-size: 1.5em;
+      padding: 16px 20px;
+    }
+  }
+
+  // .kotak {
+  //   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  // }
+
+  .nav-pills {
+    a {
+      @include media-breakpoint-up(md) {
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        font-size: 24px;
+      }
+    }
+  }
+
   h5 {
     color: #0c0d36;
     font-size: 18px;
