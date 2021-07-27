@@ -9,6 +9,100 @@
       input[type="radio"] {
         display: none;
       }
+
+      input[type="radio"]:checked ~ label {
+        box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo-bank {
+        margin-left: 50px;
+        width: 70px;
+        text-align: center;
+        margin-right: 30px;
+
+        img {
+          max-width: 70px;
+          height: auto;
+          vertical-align: middle;
+          border-style: none;
+        }
+      }
+
+      .label-text {
+        h4 {
+          color: #3c3c3c;
+          font-weight: 600;
+          margin-bottom: 0;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        p {
+          font-size: 14px;
+          color: #8b8b8b;
+          margin-bottom: 0;
+          margin-top: 5px;
+        }
+      }
+
+      input[type="radio"] ~ label[data-v-cf01dbfe]::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 30px;
+        opacity: 1;
+        background-image: url(../../images/ok.png);
+        background-size: cover;
+      }
+
+      input[type="radio"]:checked ~ label[data-v-cf01dbfe]::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 30px;
+        opacity: 1;
+        background-image: url(../../images/okk_ok.png);
+        background-size: cover;
+      }
+
+      label {
+        display: flex !important;
+        align-items: center;
+        opacity: 1;
+        position: relative;
+        padding: 30px;
+        cursor: pointer;
+        margin-bottom: 0;
+
+        // ::before {
+        //   content: "";
+        //   width: 20px;
+        //   height: 20px;
+        //   position: absolute;
+        //   left: 30px;
+        //   opacity: 1;
+        //   background-image: url(../../images/ok.png);
+        //   background-size: cover;
+        // }
+
+        // [data-v-cf01dbfe]::before {
+        //   content: "";
+        //   width: 20px;
+        //   height: 20px;
+        //   position: absolute;
+        //   left: 30px;
+        //   opacity: 1;
+        //   background-image: url(../../images/ok.png);
+        //   background-size: cover;
+        // }
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        box-sizing: border-box;
+        padding: 0;
+      }
     }
   }
 
@@ -76,6 +170,30 @@
           color: #8b8b8b;
         }
       }
+    }
+  }
+
+  .custom-control-input {
+    position: absolute;
+    // z-index: -1;
+    // opacity: 0;
+  }
+
+  .btn-md {
+    padding: 12px 40px;
+    border-radius: 4px;
+  }
+
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    min-height: 20px;
+
+    .custom-control-label {
+      font-size: 14px;
+      color: #8c8c8c;
+      margin-bottom: 0;
     }
   }
 
