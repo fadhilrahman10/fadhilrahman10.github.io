@@ -10940,6 +10940,13 @@ footer {
   margin-top: 150px;
 }
 
+@media (max-width: 767.98px) {
+  footer {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+}
+
 footer p {
   color: #979797;
 }
@@ -11094,6 +11101,109 @@ footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
+}
+
+.page-details .nav-bottom {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 8;
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .page-details .nav-bottom {
+    position: fixed !important;
+    display: block;
+  }
+}
+
+.page-details .nav-bottom button {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-details .detail-donasi .btn-md {
+  padding: 12px 40px;
+  border-radius: 4px;
+}
+
+.page-details .detail-donasi .card {
+  margin-bottom: 20px;
+}
+
+.page-details .detail-donasi .card .card-body {
+  padding: 30px;
+}
+
+.page-details .detail-donasi .card .card-body .payment-total {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #8c8c8c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-details .detail-donasi .card .card-body .payment-total h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.page-details .detail-donasi .card .card-body p {
+  font-size: 16px;
+  color: #8b8b8b;
+}
+
+.page-details .detail-donasi .card .card-body .title h3 {
+  font-size: 20px;
+  color: #3c3c3c;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.page-details .detail-donasi .card .card-body .status {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.page-details .detail-donasi .card .card-body .detail-donasi {
+  font-size: 14px;
+}
+
+.page-details .detail-donasi .card .card-body .title-icon {
+  margin-bottom: 30px;
+}
+
+.page-details .detail-donasi .card .card-body .title-icon img {
+  margin-right: 20px;
+}
+
+.page-details .detail-donasi .card .card-body .title-icon h2 {
+  font-size: 30px;
+  color: #3c3c3c;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+
+.page-details .detail-donasi .card .card-body .title-icon p {
+  font-size: 16px;
+  color: #8b8b8b;
+  margin-bottom: 0;
 }
 
 .page-details .card {
